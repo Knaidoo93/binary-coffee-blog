@@ -9,15 +9,17 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts/' }
     ],
-    sidebar: [
-      {
-        text: 'Posts',
-        items: [
-          { text: 'First Post', link: '/2025-09-24-first-post' },
-          { text: 'Second Post', link: '/2025-09-24-second-post' }
-        ]
-      }
-    ]
+    sidebar: {
+      '/': [
+        {
+          text: 'Posts',
+          items: [
+            { text: 'First Post', link: '/2025-09-24-first-post' },
+            { text: 'Second Post', link: '/2025-09-24-second-post' }
+          ]
+        }
+      ]
+    }
   },
   vite: {
     css: {
@@ -25,4 +27,9 @@ export default defineConfig({
     }
   },
   // VitePress will automatically load `docs/.vitepress/styles/index.css`
+  head: [
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap', rel: 'stylesheet' }]
+  ]
 })
