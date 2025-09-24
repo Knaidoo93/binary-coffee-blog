@@ -17,3 +17,18 @@ body{
 a {
   color: var(--vp-brand-color);
 }
+
+main {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1,h2,h3,h4{
+  color: var(--vp-c-text);
+}
+
+pre, code {
+  background: rgba(255,255,255,0.04);
+  color: var(--vp-c-text);
+}
