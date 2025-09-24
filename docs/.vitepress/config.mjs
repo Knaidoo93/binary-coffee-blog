@@ -26,7 +26,5 @@ export default defineConfig({
       preprocessorOptions: {}
     }
   },
-  head: [
-    ["link", { rel: "stylesheet", href: "/binary-coffee-blog/.vitepress/styles/index.css" }]
-  ]
+  // VitePress will automatically load `docs/.vitepress/styles/index.css`
 })
