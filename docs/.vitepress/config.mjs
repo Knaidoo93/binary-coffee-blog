@@ -7,19 +7,17 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Posts', link: '/2025-09-24-first-post' }
+      { text: 'Posts', link: '/posts/' }
     ],
-    sidebar: {
-      '/': [
-        {
-          text: 'Posts',
-          items: [
-            { text: 'First Post', link: '/2025-09-24-first-post' },
-            { text: 'Second Post', link: '/2025-09-24-second-post' }
-          ]
-        }
-      ]
-    }
+    sidebar: [
+      {
+        text: 'Posts',
+        items: [
+          { text: 'First Post', link: '/2025-09-24-first-post' },
+          { text: 'Second Post', link: '/2025-09-24-second-post' }
+        ]
+      }
+    ]
   },
   vite: {
     css: {
