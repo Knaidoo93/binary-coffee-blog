@@ -1,0 +1,19 @@
+:root{
+  --vp-brand-color: #6b4eff;
+  --vp-c-bg: #0f1720;
+  --vp-c-text: #e6eef8;
+}
+
+body{
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text);
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.vp-nav {
+  background: linear-gradient(90deg, rgba(107,78,255,0.12), rgba(107,78,255,0.04));
+}
+
+a {
+  color: var(--vp-brand-color);
+}
